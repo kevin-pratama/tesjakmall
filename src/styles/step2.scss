@@ -1,0 +1,166 @@
+.container {
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    .back {
+      text-decoration: none;
+      color: #000000;
+      opacity: 0.6;
+      p {
+        padding: 20px;
+        font-family: "Poppins";
+        line-height: 21px;
+        font-size: 14px;
+      }
+    }
+    .side {
+      display: flex;
+      .side-left {
+        margin: 20px;
+        margin-right: 300px;
+        .header {
+          display: flex;
+          flex-direction: column;
+          h1 {
+            color: #ff8a00;
+          }
+  
+          .delivery {
+            display: flex;
+            .delivery-checkbox {
+              .parent-checkbox {
+                display: block;
+                position: relative;
+                margin-bottom: 12px;
+                cursor: pointer;
+                font-size: 22px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                .checkmark {
+                  height: 60px;
+                  width: 180px;
+                  background-color: #fefefe;
+                  margin-right: 10px;
+                  border: 1px solid #cccccc;
+                  &:after {
+                    left: 9px;
+                    top: 5px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid #1bd97b;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    margin-left: 160px;
+                    margin-top: -4px;
+                  }
+                }
+                input {
+                  position: absolute;
+                  opacity: 0;
+                  cursor: pointer;
+                  height: 0;
+                  width: 0;
+                  &:checked {
+                    ~ {
+                      .checkmark {
+                        background-color: #2196f3;
+                        border: 2px solid #1bd97b;
+                        background: #1bd97b1a;
+  
+                        &:after {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+                }
+                &:hover {
+                  input {
+                    ~ {
+                      .checkmark {
+                        background-color: #ccc;
+                      }
+                    }
+                  }
+                }
+              }
+              .checkmark {
+                position: block;
+                top: 0;
+                left: 0;
+                height: 60px;
+                width: 180px;
+                background-color: #eee;
+                &:after {
+                  content: "";
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .diveder {
+        border-left: 1px solid #ff8a00;
+        margin: 1px;
+        opacity: 0.2;
+      }
+      .side-right {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+        margin-bottom: 10px;
+        .header-summary {
+          h2 {
+            color: #ff8a00;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .summary-content {
+          flex-direction: column;
+  
+          .bottom {
+            display: flex;
+            justify-content: space-between;
+            .bottom-child {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            .bottom-price {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              align-items: flex-end;
+            }
+            p {
+              font-size: 14px;
+            }
+            h2 {
+              color: #ff8a00;
+            }
+          }
+          .btn {
+            height: 60px;
+            justify-items: center;
+            width: 100%;
+            border-color: #ff8a00;
+            background-color: #ff8a00;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }

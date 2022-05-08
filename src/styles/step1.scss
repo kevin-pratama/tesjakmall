@@ -1,0 +1,103 @@
+.container {
+    background-color: white;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    .back {
+      text-decoration: none;
+      color: #000000;
+      opacity: 0.6;
+      p {
+        padding: 20px;
+        font-family: "Poppins";
+        line-height: 21px;
+        font-size: 14px;
+      }
+    }
+    .grid {
+      display: flex;
+      .side-left {
+        margin: 20px;
+        .header-form {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h1 {
+            color: #ff8a00;
+          }
+          .checkbox {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+          }
+        }
+        .form {
+          margin: 0;
+          padding: 0;
+          input {
+            height: 60px;
+            width: 350px;
+            margin-bottom: 10px;
+            margin-right: 30px;
+            padding-left: 15px;
+          }
+        }
+      }
+      .diveder {
+        border-left: 1px solid #ff8a00;
+        margin: 1px;
+        opacity: 0.2;
+      }
+      .side-right {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+        margin-bottom: 10px;
+        .header-summary {
+          h2 {
+            color: #ff8a00;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .summary-content {
+          flex-direction: column;
+  
+          .bottom {
+            display: flex;
+            justify-content: space-between;
+            .bottom-child {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+            .bottom-price {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              align-items: flex-end;
+            }
+            p {
+              font-size: 14px;
+            }
+            h2 {
+              color: #ff8a00;
+            }
+          }
+          .btn {
+            height: 60px;
+            justify-items: center;
+            width: 100%;
+            border-color: #ff8a00;
+            background-color: #ff8a00;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
